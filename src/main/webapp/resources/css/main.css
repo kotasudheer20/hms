@@ -1,0 +1,43 @@
+h1{
+	color:#0000FF;
+}
+
+h2{
+	color:#FF0000;
+}
+
+#header {
+    text-align:center;
+   font-size: 30px;
+   border-color: blue;
+   height:10%
+}
+
+#loginimage {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:80%;
+    width:70%;
+    float:left;
+    padding:5px; 
+}
+
+#login {
+    width:20%;
+    float: right;    
+}
+
+#footer {
+    text-align:center;
+    height:10%;
+    width:100%
+}
+
+
+#error {
+    text-align:center;
+    height:10%;
+    width:100%;
+    color:#FF0000;
+    background-color: #551100    
+}
