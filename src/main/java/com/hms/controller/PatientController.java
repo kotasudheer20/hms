@@ -45,18 +45,18 @@ public class PatientController {
 	@RequestMapping(value="/addpatient",method=RequestMethod.GET)
 	public String addPatientForm(Model model){
 		System.out.println("Reached addPatientForm");
-		model.addAttribute("addpatient",new Patient());
+		model.addAttribute("patient",new Patient());
 		return "AddPatient";
 	}
 	
 	@RequestMapping(value="/addpatient",method=RequestMethod.POST)
-	public String addPatient(@ModelAttribute("addpatient") Patient patient,BindingResult result,Model model){
+	public String addPatient(@ModelAttribute("patient") Patient patient,BindingResult result,Model model){
 		System.out.println("Reached addPatient");
 		try {
 			String addPatietnResult = patientService.addPatient(patient);
 			if(addPatietnResult.equalsIgnoreCase("Success")){
-				model.addAttribute("addpatient", patientService.getPatientByFNLN(patient.getFirstName(), patient.getLastName()).get(0));
-				return "AddPatient";
+				model.addAttribute("patient", patientService.getPatientByFNLN(patient.getFirstName(), patient.getLastName()).get(0));
+				return "UpdatePatient";
 			} else {
 				model.addAttribute("message", "Please check errors");
 				return "AddPatient";

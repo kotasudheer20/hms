@@ -4,9 +4,23 @@ import java.util.Date;
 
 public class Diagnosis {
 	int diagnosisID;
-	String diagnosisName;
+	String diagnosisName,assignedDoctorFirstName,assignedDoctorLastName;
+	
 	int diagnosisType,assignedDoctorID;
 	Date treatmentDate;
+	
+	public String getAssignedDoctorFirstName() {
+		return assignedDoctorFirstName;
+	}
+	public void setAssignedDoctorFirstName(String assignedDoctorFirstName) {
+		this.assignedDoctorFirstName = assignedDoctorFirstName;
+	}
+	public String getAssignedDoctorLastName() {
+		return assignedDoctorLastName;
+	}
+	public void setAssignedDoctorLastName(String assignedDoctorLastName) {
+		this.assignedDoctorLastName = assignedDoctorLastName;
+	}
 	
 	public int getDiagnosisID() {
 		return diagnosisID;

@@ -6,7 +6,7 @@ h2{
 	color:#FF0000;
 }
 
-#header {
+.header {
     text-align:center;
    font-size: 30px;
    border-color: blue;
@@ -22,22 +22,43 @@ h2{
     padding:5px; 
 }
 
-#login {
+.login {
     width:20%;
     float: right;    
 }
 
-#footer {
+.footer {
     text-align:center;
     height:10%;
     width:100%
 }
 
 
-#error {
+.error {
     text-align:center;
     height:10%;
     width:100%;
     color:#FF0000;
-    background-color: #551100    
 }
+
+.button {
+	box-shadow: rgb(252, 226, 193) 0px 1px 0px 0px inset; 
+	background-color: rgb(255, 196, 119); 
+	border-radius: 6px; 
+	border: 1px solid rgb(238, 180, 79); 
+	display: inline-block; 
+	cursor: pointer; 
+	color: rgb(255, 255, 255); 
+	font-family: Arial; 
+	font-size: 17px; 
+	font-weight: bold; 
+	padding: 5px 6px; 
+	text-decoration: none; 
+	text-shadow: rgb(204, 159, 82) 0px 0px 3px;
+}
+
+.button:focus{
+	text-shadow: rgb(204, 159, 82) 0px 0px 0px;
+    outline:solid 1px rgb(255, 196, 119);
+}
+

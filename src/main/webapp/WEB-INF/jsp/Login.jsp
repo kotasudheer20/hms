@@ -28,7 +28,7 @@
 						<td><input type="password" name="password" /></td></tr>
 						<%-- <td><form:password name="password" path="password" /></td></tr> --%>
 					
-					<tr><td colspan="2" align="center"><input type="image" src = "<c:url value='resources/images/LoginButton.jpg'/>" name="submit" value="submit" ></td></tr>
+					<tr><td colspan="2" align="center"><input type="submit" name="login" value="Login" class="button"></td></tr>
 					<tr><td colspan="2" align="center"><div class="error">${error_message}</div></td></tr>
 					<tr ><td colspan="2" align="center">Don't have an Account. Please <a href="<c:url value='registeruserform' />" style="text-align: center;"> Sign Up</a> here.</td></tr>
 				</table>
@@ -37,29 +37,5 @@
 			</form:form>
 		</div>
 	</div>
-	
-	<!-- Sarika -->
-    <nav class="navbar navbar-inverse">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">Spring Boot</a>
-            </div>
-            <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container">
-
-        <div class="starter-template">
-            <h1>Spring Boot Web JSP Example</h1>
-            <h2>Message: </h2>
-        </div>
-
-    </div>
 </body>
 </html>

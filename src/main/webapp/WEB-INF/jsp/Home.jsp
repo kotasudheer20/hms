@@ -59,7 +59,7 @@
 				<tr><td>Last Name:</td>
 					<td><input type="text" class="inputbox" size="20" name="lastName"></td>
 				</tr>
-				<tr><td rowspan="2"><input type="submit" value="Search" name = "searchPatient" src="images\search.jpg"></td></tr>
+				<tr><td rowspan="2"><input type="submit" value="Search" name = "searchPatient" class="button"></td></tr>
 				<tr><td colspan="2"><span name="error_Message" style="color: red"></span></td>
 				</tr>
 			</table>

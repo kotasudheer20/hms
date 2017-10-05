@@ -33,7 +33,7 @@
 		        <tr>
 		            <td>Date of Birth:</td>
 		            <td><form:input name="dob" value="" path="dob" /></td>
-		            <td><form:errors cssStyle="color: red;" path="dob" /><span class="error">HI</span></td>
+		            <td><form:errors cssStyle="color: red;" path="dob" />
 		            
 		        </tr>
 		        <tr>
@@ -77,7 +77,7 @@
 		        </tr>
 		       
 		        <tr>
-		            <td><input type="submit" value="Submit" /></td><td><input type="reset" value="Reset" /></td>
+		            <td><input type="submit" value="Submit" class="button" /></td><td><input type="reset" value="Reset" /></td>
 		        </tr>
         
 		    </tbody>
